@@ -1,7 +1,4 @@
-# Destroying Defender (Educational Project Only)
-
-
-This project is strictly for educational and research purposes only. Unauthorized use of this code against systems without explicit permission is illegal and unethical.
+# Destroying Defender
 
 ## Overview
 This project demonstrates a method to bypass Windows Defender while executing certain operations such as dumping LSASS and executing Mimikatz in-memory. The tactics involved include manual PE (Portable Executable) loading, EAT (Export Address Table) hooking, and memory manipulation.
@@ -36,3 +33,7 @@ By implementing these tactics, when Defender dynamically calls the function to s
 ```bash
 --gendmp   # To Generate LSASS Dump
 --mimi     # To run Mimikatz
+
+
+**Warning:** Unauthorized use, distribution or modification of this code may violate legal agreements and laws. Use at your own risk.
+
