@@ -33,7 +33,7 @@ By implementing these tactics, when Defender dynamically calls the function to s
 ```bash
 --gendmp   # To Generate LSASS Dump
 --mimi     # To run Mimikatz
-
+```
 
 **Warning:** Unauthorized use, distribution or modification of this code may violate legal agreements and laws. Use at your own risk.
 
