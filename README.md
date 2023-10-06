@@ -21,7 +21,7 @@ This project demonstrates a method to bypass Windows Defender while executing ce
 ### AmsiScanBuffer Bypass
 - **Absolute Hooking**: Perform absolute EAT hooking to redirect calls to `AmsiScanBuffer` to a custom function `CustomAmsiScanBuffer` that always returns `AMSI_RESULT_CLEAN`, indicating the buffer is clean.
 
-By implementing these tactics, when Defender dynamically calls the function to scan memory buffers, it's redirected to our fake function which always returns 0, indicating the buffer is clean.
+By implementing these tactics, when Defender dynamically calls the function to scan memory buffers from dynamic loads, it's redirected to our fake function which always returns 0, indicating the buffer is clean.
 
 ## LSASS Dumping
 - Bypass Defender by creating a callback to the `MiniDumpWriteDump` function.
