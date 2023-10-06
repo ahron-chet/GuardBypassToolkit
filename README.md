@@ -1,7 +1,6 @@
 # Destroying Defender (Educational Project Only)
 
 
-## Disclaimer
 This project is strictly for educational and research purposes only. Unauthorized use of this code against systems without explicit permission is illegal and unethical.
 
 ## Overview
@@ -23,7 +22,7 @@ This project demonstrates a method to bypass Windows Defender while executing ce
 - **Function Redirection**: Utilize `Hooking` to redirect a specified function in the EAT to your custom function. This modifies the EAT so any call to the specified function will now go to your custom function.
 
 ### AmsiScanBuffer Bypass
-- **Absolute Hooking**: Perform absolute hooking to redirect calls to `AmsiScanBuffer` to a custom function `CustomAmsiScanBuffer` that always returns `AMSI_RESULT_CLEAN`, indicating the buffer is clean.
+- **Absolute Hooking**: Perform absolute EAT hooking to redirect calls to `AmsiScanBuffer` to a custom function `CustomAmsiScanBuffer` that always returns `AMSI_RESULT_CLEAN`, indicating the buffer is clean.
 
 By implementing these tactics, when Defender dynamically calls the function to scan memory buffers, it's redirected to our fake function which always returns 0, indicating the buffer is clean.
 
