@@ -1,4 +1,4 @@
-# Destroying Defender
+
 
 ## Overview
 This project demonstrates a method to bypass Windows Defender while executing certain operations such as dumping LSASS and executing Mimikatz in-memory. The tactics involved include manual PE (Portable Executable) loading, EAT (Export Address Table) hooking, and memory manipulation.
